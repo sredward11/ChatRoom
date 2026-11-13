@@ -23,7 +23,7 @@ export function MessageBubble({
     <View style={[styles.row, mine && styles.rowMine]}>
       {!mine &&
         (showSender ? (
-          <Avatar username={message.username} color={message.avatarColor} size={28} />
+          <Avatar username={message.username} color={message.avatarColor} size={34} />
         ) : (
           <View style={styles.avatarGap} />
         ))}
@@ -58,22 +58,22 @@ const styles = StyleSheet.create({
     maxWidth: '85%',
   },
   rowMine: { alignSelf: 'flex-end', flexDirection: 'row-reverse' },
-  avatarGap: { width: 28 },
+  avatarGap: { width: 34 },
   column: { flexShrink: 1 },
   sender: {
-    fontSize: 12,
+    fontSize: 13,
     fontWeight: '700',
     color: colors.primary,
-    marginBottom: 2,
+    marginBottom: 3,
     marginLeft: 4,
   },
-  bubble: { borderRadius: radius.lg, paddingVertical: 10, paddingHorizontal: spacing.md },
+  bubble: { borderRadius: radius.lg, paddingVertical: 12, paddingHorizontal: spacing.md },
   bubbleMine: { backgroundColor: colors.bubbleMine, borderBottomRightRadius: 4 },
   bubbleTheirs: { backgroundColor: colors.bubbleTheirs, borderBottomLeftRadius: 4 },
   pending: { opacity: 0.6 },
-  body: { fontSize: 15, color: colors.text, lineHeight: 20 },
+  body: { fontSize: 16, color: colors.text, lineHeight: 22 },
   bodyMine: { color: colors.onPrimary },
-  time: { fontSize: 10, color: colors.muted, marginTop: 2, marginLeft: 4 },
+  time: { fontSize: 11, color: colors.muted, marginTop: 3, marginLeft: 4 },
   timeMine: { textAlign: 'right', marginRight: 4 },
 });
 

@@ -4,9 +4,10 @@ import { colors } from '@/theme';
 import type { IconName } from '@/utils/icons';
 
 function tabIcon(name: IconName) {
-  return ({ color, size }: { color: unknown; size: number }) => (
-    <Ionicons name={name} size={size} color={(color as string) ?? colors.muted} />
-  );
+  function TabBarIcon({ color, size }: { color: unknown; size: number }) {
+    return <Ionicons name={name} size={size} color={(color as string) ?? colors.muted} />;
+  }
+  return TabBarIcon;
 }
 
 export default function TabsLayout() {

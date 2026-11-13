@@ -97,14 +97,14 @@ export default function ProfileScreen() {
 
 const styles = StyleSheet.create({
   title: {
-    fontSize: 28,
+    fontSize: 32,
     fontWeight: '800',
     color: colors.text,
-    marginBottom: spacing.md,
+    marginBottom: spacing.lg,
   },
-  card: { alignItems: 'center', gap: spacing.sm },
-  name: { fontSize: 20, fontWeight: '700', color: colors.text },
-  email: { fontSize: 14, color: colors.muted },
+  card: { alignItems: 'center', gap: spacing.md, padding: spacing.lg },
+  name: { fontSize: 24, fontWeight: '700', color: colors.text },
+  email: { fontSize: 15, color: colors.muted },
   editRow: { alignSelf: 'stretch' },
   editButtons: { flexDirection: 'row', gap: spacing.sm },
   editButton: { flex: 1 },
